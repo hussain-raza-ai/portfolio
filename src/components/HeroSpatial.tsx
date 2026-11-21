@@ -77,7 +77,8 @@ export function HeroSpatial() {
 
           <h1 id="hero-title" className="hero-name">
             <span>{lineOne}</span>
-            {lineTwo ? <span>{lineTwo}</span> : null}
+            {/* The space keeps the name readable as one phrase for search engines and screen readers */}
+            {lineTwo ? <> <span>{lineTwo}</span></> : null}
           </h1>
 
           <p className="hero-role">I engineer AI that hears, reads and reasons.</p>

@@ -26,7 +26,7 @@ export const site = {
   cv: "/Hussain_Raza_Shah_Jaffery_CV.pdf",
 
   // Your live site address once it is deployed on Vercel
-  url: "https://hussain-raza.vercel.app",
+  url: "https://portfolio-peach-seven-40.vercel.app",
 
   description:
     "AI engineer in Lahore building speech, language and document AI for hospitals: voice-to-EMR, clinical extraction and on-premise LLMs.",
