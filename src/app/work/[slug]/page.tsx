@@ -5,6 +5,7 @@ import { Effects } from "@/components/Effects";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { CaseNav } from "@/components/CaseNav";
 import { projects, getProject } from "@/content/projects";
+import { site } from "@/content/site";
 
 type Params = { slug: string };
 
@@ -21,7 +22,17 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: project.title,
     description: project.summary,
-    openGraph: { title: project.title, description: project.summary },
+    alternates: { canonical: `/work/${project.slug}` },
+    // A page's openGraph replaces the layout's, so the share image and address are set again here
+    openGraph: {
+      type: "article",
+      url: `/work/${project.slug}`,
+      siteName: site.name,
+      title: `${project.title} | ${site.name}`,
+      description: project.summary,
+      images: ["/opengraph-image"],
+    },
+    twitter: { card: "summary_large_image", images: ["/opengraph-image"] },
   };
 }
 
