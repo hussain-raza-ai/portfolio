@@ -2387,6 +2387,31 @@ html:has(.case) .stage-bg {
   pointer-events: none;
 }
 
+/* Small confirmation note, used when the email address is copied */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 90;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: var(--glass-bg), rgba(16, 17, 20, 0.96);
+  box-shadow: var(--glass-edge), 0 20px 50px -20px rgba(0, 0, 0, 0.8);
+  font-size: 0.9375rem;
+  color: var(--ink);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, 12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.toast.is-on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 /* Pointer: a soft dot that melts into a highlight around whatever it is over */
 
 .ptr,

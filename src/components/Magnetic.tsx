@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, type MouseEvent, type ReactNode } from "react";
 import { clamp, isFinePointer, listenPointer, pointer, prefersReducedMotion, spring, step } from "@/lib/motion";
 
 type Props = {
@@ -12,10 +12,11 @@ type Props = {
   strength?: number;
   /** Accessible name, also shown as a hover label */
   label?: string;
+  onClick?: (e: MouseEvent<HTMLAnchorElement>) => void;
 };
 
 // A link that leans towards the pointer when it comes near, and springs back.
-export function Magnetic({ href, className, children, external, download, strength = 0.35, label }: Props) {
+export function Magnetic({ href, className, children, external, download, strength = 0.35, label, onClick }: Props) {
   const ref = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -79,6 +80,7 @@ export function Magnetic({ href, className, children, external, download, streng
       data-cursor
       aria-label={label}
       data-label={label}
+      onClick={onClick}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       {...(download ? { download: true } : {})}
     >

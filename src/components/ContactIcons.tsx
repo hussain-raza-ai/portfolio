@@ -1,4 +1,5 @@
 import { Magnetic } from "@/components/Magnetic";
+import { EmailButton } from "@/components/EmailButton";
 import { ChatIcon, DocIcon, MailIcon, ProfileIcon } from "@/components/Icons";
 import { site } from "@/content/site";
 
@@ -17,9 +18,9 @@ export function ContactIcons({ size = "md" }: { size?: "md" | "lg" }) {
       ) : null}
       {site.email ? (
         <li>
-          <Magnetic href={`mailto:${site.email}`} className="icon-btn" label="Email" strength={0.3}>
+          <EmailButton className="icon-btn" label="Email">
             <MailIcon size={iconSize} />
-          </Magnetic>
+          </EmailButton>
         </li>
       ) : null}
       <li>

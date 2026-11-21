@@ -13,7 +13,7 @@ export const site = {
   whatsapp: "923105303331",
   whatsappDisplay: "+92 310 5303331",
 
-  linkedin: "https://www.linkedin.com/in/hussain-raza-7101143b3/",
+  linkedin: "https://www.linkedin.com/in/hussain-raza-ai-engineer/",
 
   // e.g. "https://github.com/your-username"
   github: "",
