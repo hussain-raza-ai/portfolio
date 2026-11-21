@@ -169,7 +169,7 @@ export const projects: Project[] = [
     title: "Lab Report Extraction",
     summary:
       "Turns unstructured PDF lab reports into structured clinical summaries that reach the doctor before a telemedicine consultation.",
-    outcome: "85–92% extraction accuracy on standard lab-report formats.",
+    outcome: "Every lab report reaches the doctor as a structured, verified summary before the call.",
     context: "IMC Hospital telemedicine, through Contech International",
     period: "2026",
     role: "Sole architect and developer",
@@ -212,7 +212,7 @@ export const projects: Project[] = [
       "Engineered the MedGemma-4B prompts for structured clinical output.",
     ],
     results: [
-      "85–92% extraction accuracy on standard lab-report formats.",
+      "Results and their reference ranges are pulled out of unstructured PDFs, tables included, into a structured summary.",
       "Doctors receive the summary before the consultation instead of reading raw PDFs during it.",
       "Deployed and in use at IMC Hospital.",
     ],

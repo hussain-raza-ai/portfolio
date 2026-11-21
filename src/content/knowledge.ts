@@ -21,7 +21,7 @@ export const answers: Answer[] = [
     question: "How does the lab report pipeline work?",
     keywords: ["lab", "report", "ocr", "docling", "pdf", "telemedicine", "extraction", "4b"],
     answer:
-      "A medical assistant uploads a patient's PDF lab report before a telemedicine consultation. An n8n workflow sends it to a FastAPI service, Docling OCR reads it, and MedGemma-4B extracts the results and maps them to reference ranges. A doctor verifies every result, and a structured summary lands in the doctor's inbox. It reaches 85–92% extraction accuracy on standard report formats and is deployed at IMC Hospital.",
+      "A medical assistant uploads a patient's PDF lab report before a telemedicine consultation. An n8n workflow sends it to a FastAPI service, Docling OCR reads it, and MedGemma-4B extracts the results and maps them to reference ranges. A doctor verifies every result, and a structured summary lands in the doctor's inbox. It is deployed and in use at IMC Hospital.",
   },
   {
     id: "sara",
