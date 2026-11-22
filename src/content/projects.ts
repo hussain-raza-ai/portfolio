@@ -21,6 +21,8 @@ export type Project = {
   pipeline: PipelineStep[];
   built: string[];
   results: string[];
+  /** Public source code, when the project's code can be shared */
+  code?: string;
 };
 
 export const projects: Project[] = [
@@ -101,6 +103,7 @@ export const projects: Project[] = [
   },
   {
     slug: "smart-query-routing",
+    code: "https://github.com/hussain-raza-ai/smart-query-routing-system",
     title: "Smart Query Routing",
     summary:
       "Reads incoming web and email queries, sends each one to the right department, and drafts a reply for staff to send.",

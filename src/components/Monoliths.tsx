@@ -211,9 +211,16 @@ export function Monoliths() {
                       <li key={s}>{s}</li>
                     ))}
                   </ul>
-                  <Link href={`/work/${p.slug}`} className="mono-link" data-cursor>
-                    Open the case study
-                  </Link>
+                  <div className="mono-actions">
+                    <Link href={`/work/${p.slug}`} className="mono-link" data-cursor>
+                      Open the case study
+                    </Link>
+                    {p.code ? (
+                      <a href={p.code} className="mono-link mono-link-ghost" target="_blank" rel="noopener noreferrer" data-cursor>
+                        Code on GitHub
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
                 <div className="mono-visual">
                   <ProjectVisual slug={p.slug} />

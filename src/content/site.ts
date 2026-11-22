@@ -15,8 +15,7 @@ export const site = {
 
   linkedin: "https://www.linkedin.com/in/hussain-raza-ai-engineer/",
 
-  // e.g. "https://github.com/your-username"
-  github: "",
+  github: "https://github.com/hussain-raza-ai",
 
   // Your portrait in /public. Set to "" to show your initials instead.
   photo: "/hussain.jpg",

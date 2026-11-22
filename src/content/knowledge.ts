@@ -33,9 +33,9 @@ export const answers: Answer[] = [
   {
     id: "fyp",
     question: "What was his final year project?",
-    keywords: ["final year", "fyp", "query", "routing", "university project", "gemini", "claude", "email"],
+    keywords: ["final year", "fyp", "query", "routing", "university project", "gemini", "claude", "email", "source code", "open source"],
     answer:
-      "His final year project at Virtual University is Smart Query Routing, built solo. It classifies incoming web and email queries with Google Gemini through LangChain, routes each one to the right department and drafts a reply, with Anthropic Claude and keyword matching as fallbacks. It has a FastAPI backend on Supabase with Google OAuth2 and role-based access for 5 roles, a React dashboard, and n8n workflows for Gmail ingestion and 24-hour SLA escalation.",
+      "His final year project at Virtual University is Smart Query Routing, built solo. It classifies incoming web and email queries with Google Gemini through LangChain, routes each one to the right department and drafts a reply, with Anthropic Claude and keyword matching as fallbacks. It has a FastAPI backend on Supabase with Google OAuth2 and role-based access for 5 roles, a React dashboard, and n8n workflows for Gmail ingestion and 24-hour SLA escalation. The code is public on GitHub: github.com/hussain-raza-ai/smart-query-routing-system.",
   },
   {
     id: "erp",
@@ -75,9 +75,9 @@ export const answers: Answer[] = [
   {
     id: "contact",
     question: "How can I contact him?",
-    keywords: ["contact", "hire", "hiring", "recruit", "cv", "resume", "collaborat", "work together", "email", "reach", "linkedin", "available", "availability", "freelance", "whatsapp", "phone", "number", "gmail"],
+    keywords: ["contact", "hire", "hiring", "recruit", "cv", "resume", "collaborat", "work together", "github", "email", "reach", "linkedin", "available", "availability", "freelance", "whatsapp", "phone", "number", "gmail"],
     answer:
-      "To hire him or talk about a project, email hussainrazashah536@gmail.com or message him on WhatsApp at +92 310 5303331. He is also on LinkedIn, and his CV can be downloaded from the top and bottom of this page.",
+      "To hire him or talk about a project, email hussainrazashah536@gmail.com or message him on WhatsApp at +92 310 5303331. He is also on LinkedIn and GitHub (github.com/hussain-raza-ai), and his CV can be downloaded from the top and bottom of this page.",
   },
 ];
 

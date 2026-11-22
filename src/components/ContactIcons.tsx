@@ -1,6 +1,6 @@
 import { Magnetic } from "@/components/Magnetic";
 import { EmailButton } from "@/components/EmailButton";
-import { ChatIcon, DocIcon, MailIcon, ProfileIcon } from "@/components/Icons";
+import { ChatIcon, CodeIcon, DocIcon, MailIcon, ProfileIcon } from "@/components/Icons";
 import { site } from "@/content/site";
 
 // Round glass icons for every way to reach me. The label appears on hover and is
@@ -28,6 +28,13 @@ export function ContactIcons({ size = "md" }: { size?: "md" | "lg" }) {
           <ProfileIcon size={iconSize} />
         </Magnetic>
       </li>
+      {site.github ? (
+        <li>
+          <Magnetic href={site.github} className="icon-btn" label="GitHub" external strength={0.3}>
+            <CodeIcon size={iconSize} />
+          </Magnetic>
+        </li>
+      ) : null}
       {site.cv ? (
         <li>
           <Magnetic href={site.cv} className="icon-btn" label="Download CV" download strength={0.3}>

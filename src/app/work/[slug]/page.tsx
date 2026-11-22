@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Effects } from "@/components/Effects";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { CaseNav } from "@/components/CaseNav";
+import { Magnetic } from "@/components/Magnetic";
 import { projects, getProject } from "@/content/projects";
 import { site } from "@/content/site";
 
@@ -61,6 +62,13 @@ export default async function CaseStudyPage({ params }: { params: Promise<Params
               <h1 className="case-title">{project.title}</h1>
               <p className="case-summary">{project.summary}</p>
               <p className="case-outcome">{project.outcome}</p>
+              {project.code ? (
+                <div className="case-actions">
+                  <Magnetic href={project.code} className="btn btn-glass" external>
+                    View the code on GitHub
+                  </Magnetic>
+                </div>
+              ) : null}
             </div>
             <div className="case-visual glass" aria-hidden="true">
               <div className="case-visual-inner">
