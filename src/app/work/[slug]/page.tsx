@@ -5,6 +5,7 @@ import { Effects } from "@/components/Effects";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { CaseNav } from "@/components/CaseNav";
 import { Magnetic } from "@/components/Magnetic";
+import { LockIcon } from "@/components/Icons";
 import { projects, getProject } from "@/content/projects";
 import { site } from "@/content/site";
 
@@ -68,6 +69,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<Params
                     View the code on GitHub
                   </Magnetic>
                 </div>
+              ) : project.privateCode ? (
+                <p className="case-private">
+                  <LockIcon size={15} />
+                  Code in a private repository. Walkthrough available on request.
+                </p>
               ) : null}
             </div>
             <div className="case-visual glass" aria-hidden="true">

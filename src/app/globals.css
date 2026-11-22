@@ -1121,6 +1121,20 @@ a {
   margin-top: 24px;
 }
 
+/* Says the code exists but is private; deliberately not a link */
+.case-private {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  padding: 9px 16px 9px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
 .mono-link:hover {
   background: #ffffff;
 }

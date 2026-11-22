@@ -14,7 +14,7 @@ export const answers: Answer[] = [
     question: "What is MedScribe AI?",
     keywords: ["medscribe", "prescription", "dictation", "voice to", "emr", "medasr", "27b", "rapidfuzz"],
     answer:
-      "MedScribe AI turns a doctor's 30-second voice dictation into a structured clinical record across 7 EMR fields: vitals, history, allergies, examination, diagnosis, prescription and lab orders. Google MedASR transcribes the audio, a RapidFuzz matching engine maps every drug and test to IMC Hospital's catalogue of 12,640 medicines and 1,694 lab tests, and MedGemma 27B reviews each prescription for dosing errors, interactions and contraindications. It runs on the hospital's own GPU server, returns a record in about 2 seconds, and the doctor approves every record.",
+      "MedScribe AI turns a doctor's 30-second voice dictation into a structured clinical record across 7 EMR fields: vitals, history, allergies, examination, diagnosis, prescription and lab orders. Google MedASR transcribes the audio, a RapidFuzz matching engine maps every drug and test to IMC Hospital's catalogue of 12,640 medicines and 1,694 lab tests, and MedGemma 27B reviews each prescription for dosing errors, interactions and contraindications. It runs on the hospital's own GPU server, returns a record in about 2 seconds, and the doctor approves every record. Its code is in a private repository because it holds hospital data.",
   },
   {
     id: "lab",
@@ -28,12 +28,12 @@ export const answers: Answer[] = [
     question: "Tell me about Dr. Sara",
     keywords: ["sara", "urdu", "voice agent", "intake", "pipecat", "whisper"],
     answer:
-      "Dr. Sara is an Urdu-speaking voice agent that takes a patient's medical intake before the consultation. Groq Whisper transcribes the patient, GPT-4o-mini runs the conversation, Edge TTS replies aloud in Urdu, and Pipecat keeps it real-time. An n8n workflow delivers the intake data to the hospital backend.",
+      "Dr. Sara is an Urdu-speaking voice agent that takes a patient's medical intake before the consultation. Groq Whisper transcribes the patient, GPT-4o-mini runs the conversation, Edge TTS replies aloud in Urdu, and Pipecat keeps it real-time. An n8n workflow delivers the intake data to the hospital backend. Its code is in a private repository.",
   },
   {
     id: "fyp",
     question: "What was his final year project?",
-    keywords: ["final year", "fyp", "query", "routing", "university project", "gemini", "claude", "email", "source code", "open source"],
+    keywords: ["final year", "fyp", "query", "routing", "university project", "gemini", "claude", "email"],
     answer:
       "His final year project at Virtual University is Smart Query Routing, built solo. It classifies incoming web and email queries with Google Gemini through LangChain, routes each one to the right department and drafts a reply, with Anthropic Claude and keyword matching as fallbacks. It has a FastAPI backend on Supabase with Google OAuth2 and role-based access for 5 roles, a React dashboard, and n8n workflows for Gmail ingestion and 24-hour SLA escalation. The code is public on GitHub: github.com/hussain-raza-ai/smart-query-routing-system.",
   },
@@ -73,9 +73,16 @@ export const answers: Answer[] = [
       "He is completing a BS in Computer Science at Virtual University of Pakistan, expected in December 2026. Before that he did his ICS (Intermediate in Computer Science) at Federal Government College, Jhelum, from 2019 to 2021. He also holds the Cisco CCNA: Introduction to Networks certificate (December 2025).",
   },
   {
+    id: "code",
+    question: "Can I see his code?",
+    keywords: ["code", "source", "repo", "github", "open source"],
+    answer:
+      "The code for Smart Query Routing is public at github.com/hussain-raza-ai/smart-query-routing-system. MedScribe AI and Dr. Sara live in private repositories because they contain hospital data, and Hussain is happy to walk through that code in an interview. His GitHub profile is github.com/hussain-raza-ai.",
+  },
+  {
     id: "contact",
     question: "How can I contact him?",
-    keywords: ["contact", "hire", "hiring", "recruit", "cv", "resume", "collaborat", "work together", "github", "email", "reach", "linkedin", "available", "availability", "freelance", "whatsapp", "phone", "number", "gmail"],
+    keywords: ["contact", "hire", "hiring", "recruit", "cv", "resume", "collaborat", "work together", "email", "reach", "linkedin", "available", "availability", "freelance", "whatsapp", "phone", "number", "gmail"],
     answer:
       "To hire him or talk about a project, email hussainrazashah536@gmail.com or message him on WhatsApp at +92 310 5303331. He is also on LinkedIn and GitHub (github.com/hussain-raza-ai), and his CV can be downloaded from the top and bottom of this page.",
   },

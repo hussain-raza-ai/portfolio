@@ -23,11 +23,14 @@ export type Project = {
   results: string[];
   /** Public source code, when the project's code can be shared */
   code?: string;
+  /** The code exists in a private repository (it holds hospital data) */
+  privateCode?: boolean;
 };
 
 export const projects: Project[] = [
   {
     slug: "medscribe-ai",
+    privateCode: true,
     title: "MedScribe AI",
     summary:
       "Turns a doctor's voice dictation into a structured clinical record, with an AI safety review of every prescription.",
@@ -275,6 +278,7 @@ export const projects: Project[] = [
   },
   {
     slug: "dr-sara",
+    privateCode: true,
     title: "Dr. Sara",
     summary: "An Urdu-speaking voice agent that takes a patient's medical intake before the consultation.",
     outcome: "A real-time voice conversation in Urdu, end to end.",
