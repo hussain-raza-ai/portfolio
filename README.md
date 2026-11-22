@@ -1,6 +1,28 @@
-# Hussain Raza Shah Jaffery: portfolio
+# Hussain Raza Shah Jaffery: AI Engineer portfolio
 
-A Next.js 16 site, ready to deploy on Vercel.
+**Live site: [hussain-raza-ai.vercel.app](https://hussain-raza-ai.vercel.app)**
+
+The portfolio of an AI engineer who builds speech, document and language AI. It shows five systems as
+case studies, a live view of how they work, and an assistant that answers questions about the work.
+
+![The home page: name, portrait and the systems I build](docs/preview-home.jpg)
+
+## What's on the site
+
+- **How my systems work:** an orchestration engine. Pick a project and its path lights up from the input
+  (voice, documents, inbox) through perception, reasoning and action to the result.
+- **Five case studies:** MedScribe AI, Smart Query Routing, Lab Report Extraction, University ERP & LMS and
+  Dr. Sara. Each one covers the problem, every step of the pipeline, what I built and the results.
+- **Ask my AI:** answers questions about my projects, stack and experience, straight from the facts on the site.
+- **Contact and CV:** WhatsApp, email, LinkedIn and a downloadable CV.
+
+![The orchestration engine, showing one project's path](docs/preview-engine.jpg)
+
+## Built with
+
+Next.js 16 (App Router), React 19, TypeScript and plain CSS, deployed on Vercel. The motion, the pointer and
+the 3D project corridor are written by hand without animation libraries, and every animation loop stops when
+nothing is moving.
 
 ## Run it on your computer
 
